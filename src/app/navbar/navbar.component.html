@@ -1,8 +1,9 @@
 <mat-toolbar color="primary">
-  <span><a class="nav-logo" mat-button routerLink="home">Willie Baltz</a></span>
+  <span *ngIf="count>=1"><a class="nav-logo" mat-button routerLink="home">Willie Baltz</a></span>
   <div class="spacer"></div>
-  <a mat-button routerLink="home">Home</a>
-  <a mat-button routerLink="about">About</a>
-  <a mat-button routerLink="contact">Contact</a>
+  <a *ngIf="count>=4" mat-button routerLink="home">Home</a>
+  <a *ngIf="count>=3" mat-button routerLink="about">About</a>
+  <a *ngIf="count>=2" mat-button routerLink="contact">Contact</a>
+<!--  {{count}}-->
 </mat-toolbar>
 <router-outlet></router-outlet>

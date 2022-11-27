@@ -8,6 +8,7 @@ import {DataService} from "../data.service";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
   count:number;
   subscription: Subscription;
 
@@ -22,7 +23,8 @@ export class HomeComponent implements OnInit {
   }
 
   newNumber() {
-    this.data.updateCount(2)
+    this.count ++
+    this.data.updateCount(this.count)
   }
 
 }
