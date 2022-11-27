@@ -1,0 +1,26 @@
+
+.container {
+  height: 90vh;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cell {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 4rem;
+}
+
+img {
+  height: 35vh;
+}
+
+.container div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
