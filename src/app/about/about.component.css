@@ -9,13 +9,15 @@
 
 .cell {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   text-align: center;
   padding: 4rem;
 }
 
 img {
   height: 35vh;
+  border-radius: 1rem;
 }
 
 .container div {
