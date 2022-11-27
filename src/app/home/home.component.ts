@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Subscription} from "rxjs";
+import {DataService} from "../data.service";
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  count:number;
+  subscription: Subscription;
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.subscription = this.data.currentNumber.subscribe(number => this.count = number)
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
+
+  newNumber() {
+    this.data.updateCount(2)
   }
 
 }

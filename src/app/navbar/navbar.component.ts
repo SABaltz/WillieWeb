@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Subscription} from "rxjs";
+import {DataService} from "../data.service";
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  count:number;
+  subscription: Subscription;
+  constructor(private data: DataService) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    this.subscription = this.data.currentNumber.subscribe(count => this.count = count)
   }
 
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
 }
