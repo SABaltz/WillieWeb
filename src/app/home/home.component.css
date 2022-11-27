@@ -1,0 +1,29 @@
+.home-list {
+  padding-top: 4vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.drum-animation {
+  fill: #ffccaa;
+  stroke-width: 0.672973;
+  font-size: 300px;
+  width: 400em;
+  height: 400em;
+}
+
+
+.drum-animation:hover {
+  cursor: pointer;
+
+}
+
+.drum-animation:active {
+  fill: #e8ba9b;
+  transition: 0s;
+  /*transform:scale(0.26557333,0.26058333);*/
+  font-size: 10px;
+  cursor: pointer;
+
+  /*transform:scale(.3,.3);*/
+}
