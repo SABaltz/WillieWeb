@@ -1,0 +1,14 @@
+.mat-toolbar{
+  background-color: cornflowerblue;
+  color: white;
+}
+.mat-button{
+  color: white;
+  font-size: 1.3rem;
+}
+.spacer{
+  flex: 1 1 auto;
+}
+.nav-logo{
+  font-size: 2.3rem;
+}
