@@ -1,3 +1,18 @@
+/*@keyframes disappear {*/
+/*  0% {*/
+/*    opacity: 1;*/
+/*  }*/
+/*  100% {*/
+/*    opacity: 0;*/
+/*  }*/
+/*}*/
+@keyframes dissapear {
+  to   { visibility: hidden; }
+}
+
+@keyframes appear {
+  to   { visibility: visible; }
+}
 .home-list {
   padding-top: 4vh;
   display: flex;
@@ -12,6 +27,20 @@
   height: 400em;
 }
 
+.broken-drum {
+  animation: dissapear 0s 2s forwards;
+  visibility: visible;
+}
+
+.broken-drum-welcome{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  animation: appear 0s 2s forwards;
+  visibility: hidden;
+  font-size: 4rem;
+  color: black;
+}
 
 .drum-animation:hover {
   cursor: pointer;
