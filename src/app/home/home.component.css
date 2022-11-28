@@ -13,6 +13,14 @@
   }
 }
 
+p {
+  color: white;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
 /*@keyframes appear {*/
 /*  to   { visibility: visible; }*/
 /*}*/
@@ -43,7 +51,9 @@
 
 .welcome-message {
   text-align: center;
+  color: white;
 }
+
 .welcome-message p {
   text-align: center;
   font-size: 1.5rem;
@@ -52,7 +62,7 @@
 .broken-drum-welcome h1 {
   text-align: center;
   font-size: 4rem;
-  color: black;
+  color: white;
   line-height: 5rem;
 }
 
